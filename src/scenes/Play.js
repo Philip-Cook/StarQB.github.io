@@ -97,7 +97,7 @@ class Play extends Phaser.Scene {
         p2ScoreConfig.fixedWidth = 0;
         this.clock = this.time.delayedCall(game.settings.gameTimer, () => {
             this.add.text(game.config.width/2, game.config.height/2, 'GAME OVER', p1ScoreConfig, p2ScoreConfig).setOrigin(0.5);
-            this.add.text(game.config.width/2, game.config.height/2 + 64, 'UP to Restart or ← for Menu', p1ScoreConfig, p2ScoreConfig).setOrigin(0.5);
+            this.add.text(game.config.width/2, game.config.height/2 + 64, '↑ to Restart or ← for Menu', p1ScoreConfig, p2ScoreConfig).setOrigin(0.5);
             this.gameOver = true;
         }, null, this);
     }
