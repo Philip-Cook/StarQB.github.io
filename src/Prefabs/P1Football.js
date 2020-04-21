@@ -22,7 +22,7 @@ class P1Football extends Phaser.GameObjects.Sprite {
             this.isFiring = true;
             this.sfxThrow.play(); // play sfx
         }
-        // if throw, move up
+        // if thrown, move up
         if (this.isFiring && this.y >= 108) {
             this.y -= 2;
         }
