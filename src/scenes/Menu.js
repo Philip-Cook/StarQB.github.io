@@ -31,6 +31,7 @@ class Menu extends Phaser.Scene {
             fixedWidth: 0
         }
         this.easyMode = true
+        game.singleMode = true//fixes bug where restarting to menu doesn't reset the game to single mode 
         this.modeSet = this.add.text(320, 290, '  Mode: Easy & Single Player  ', menuConfig).setOrigin(0.5);
         game.settings = {
             spaceshipSpeed: 3,
